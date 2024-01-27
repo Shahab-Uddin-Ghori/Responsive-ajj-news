@@ -92,6 +92,10 @@ body {
 .right-ul :nth-child(2) .speacial-line span{
   width: 4rem ;
 }
+.nav-link.active{
+  text-shadow: 0 0 0.8rem var(--text-color);
+
+}
  /* ====================END of basic setting of layout for left and rigth sec of navbar=====================================*/
 
  /* ==================================================NAV BAR ul left------------------=====================================*/
@@ -103,8 +107,11 @@ body {
   font-weight: 500;
 }
 
-.left-ul li:first-child{
+.left-ul li:first-child a{
   color: #DC772B;
+}
+.left-ul li a:hover{
+  box-shadow: 0 0 1rem var(--text2-color);
 }
  /* ==================================================END of NAV BAR ul left=================================================*/
 
@@ -119,8 +126,11 @@ body {
   font-weight: 500;
 }
 
-.right-ul li:first-child{
+.right-ul li:first-child a{
   color: #DC772B;
+}
+.right-ul li a:hover{
+  box-shadow: 0 0 1rem var(--text2-color);
 }
  /* ==================================================END of NAV BAR ul left=================================================*/
 
