@@ -1,0 +1,233 @@
+/* =====================================Google Font Eng  ==================================  */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.rubik {
+  font-family: "Rubik";
+}
+/* =====================================End of Google font  ==================================  */
+
+/* =====================================Google Urdu Font  ==================================  */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap");
+.urdu-text {
+  font-family: 'Noto Nastaliq Urdu', cursive;
+}
+/* =====================================End of Urdu Google Font  ==================================  */
+
+
+/* =========================================== Universal set  ========================================  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+  text-decoration: none;
+  color: var(--text-color);
+  list-style: none;
+}
+/* =========================================== End of Universal set  ========================================  */
+
+/* =========================================== body color  ========================================  */
+body {
+  background: var(--bg-color);
+}
+/* ===========================================End of body color  ========================================  */
+
+/* =====================================Root for color set  ==================================  */
+:root {
+  --bg-color: #f6f6f6;
+  --second--bg-color: rgba(29, 29, 31, 0.97);
+  --text-color: #ffff;
+  --text2-color: #000000d8;
+  --heading-color: #282828cb;
+  --shadow-color: #058184;
+}
+/* =====================================End of Root   ==================================  */
+
+
+/* ===================================== Header Flex Container ==================================  */
+
+.header{
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--second--bg-color);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  gap: 1rem;
+  z-index: 100;
+}
+/* ===================================== End of Header Flex Container ==================================  */
+
+
+/* =====================================**********************************************==================================  */
+ /* ====================basic setting of layout for left and rigth sec of navbar=====================================*/
+.left, .right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+.right{
+  font-family: 'Noto Nastaliq Urdu'
+}
+.speacial-line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.speacial-line span{
+  width: 2rem;
+  border-bottom: 2px solid #058184;
+}
+.left-ul :nth-child(2) .speacial-line span{
+  width: 4rem ;
+}
+.right-ul :nth-child(2) .speacial-line span{
+  width: 4rem ;
+}
+ /* ====================END of basic setting of layout for left and rigth sec of navbar=====================================*/
+
+ /* ==================================================NAV BAR ul left------------------=====================================*/
+
+.left-ul{
+  text-align: center;
+  line-height: 2rem;
+  margin-left: 2rem;
+  font-weight: 500;
+}
+
+.left-ul li:first-child{
+  color: #DC772B;
+}
+ /* ==================================================END of NAV BAR ul left=================================================*/
+
+
+
+ /* ==================================================NAV BAR ul left=================================================*/
+
+.right-ul{
+  text-align: center;
+  line-height: 2rem;
+  margin-right: 2rem;
+  font-weight: 500;
+}
+
+.right-ul li:first-child{
+  color: #DC772B;
+}
+ /* ==================================================END of NAV BAR ul left=================================================*/
+
+
+/* navabr logo img */
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.logo img{
+  width: 6rem;
+}
+
+.logo p{
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 4;
+  min-width: 6rem;
+  font-weight: 100;
+ /* max-width: 100%; */
+}
+/* end of navabr logo img */ 
+/* ===================================== Media Qurey for navbar/header =============================================== */
+/* for 768 px */
+@media only screen and (max-width: 900px) {
+
+  .header {
+    flex-direction: row;
+    max-height: 100%;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .left-ul, .right-ul {
+    margin: 0;
+  }
+
+  .logo img {
+    width: 5rem; 
+  }
+
+  .logo p {
+    text-align: center;
+    /* max-width: 4rem; */
+    flex-shrink: 2;
+    font-size: 12px;
+  }
+
+  .left-ul li, .right-ul li {
+    font-size: 14px;
+  }
+}
+/* end for 768 px */
+
+/* for max-480px */
+  @media only screen and (max-width: 650px) {
+    .header {
+      flex-direction: row;
+      max-height: 100%;
+    }
+
+    .left-ul li, .right-ul li {
+      font-size: 8px; 
+    }
+    .logo img {
+      width: 3rem;
+    }
+  
+    .logo p {
+      text-align: center;
+      font-size: 6px;
+       
+    }
+  }  
+/* end of max-550px */
+
+/* for max-350px */
+@media only screen and (max-width: 550px) {
+  .header {
+    flex-direction: row;
+    max-height: 100%;
+  }
+
+  .left-ul li, .right-ul li {
+    font-size: 8px; 
+  }
+  .logo img {
+    width: 3rem;
+  }
+
+  .logo p {
+    max-width: 3rem;
+    text-align: center;
+    font-size: 8px;
+     
+  }
+}  
+/* ========================================== End of Media Qurey for navbar/header =============================== */
+
+/* =====================================**********************************************==================================  */
+
+/* =====================================Desing By SHAHAB UDDIN GHORI==================================  */
+
+
+/* =====================================**********************************************==================================  */
