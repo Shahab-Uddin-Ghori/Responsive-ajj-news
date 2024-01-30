@@ -50,7 +50,7 @@ body {
 /* ===================================== Header Flex Container ==================================  */
 
 .header{
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -157,8 +157,212 @@ body {
  /* max-width: 100%; */
 }
 /* end of navabr logo img */ 
+
+/* ===================================== 2ND NAV-LINK CONTAINER=============================================== */
+.news-links-onTop-container > ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  gap: 0.8rem;
+  border-top: .14rem solid var(--text2-color);
+  border-bottom: .14rem solid var(--text2-color);
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+.line{
+  font-weight: 100;
+  color: var(--text2-color);
+}
+.sec-nav-link{
+  color: var(--text2-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+/* ==========search logo css =========== */
+#search-logo{
+  color: var(--text2-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+/* ===================================== END OF NAV-LINK CONTAINER=============================================== */
+/* ===================================== Main Sec of News Content ================================================ */
+.main-news-sec-eng{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;                        
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  background-color: red;
+  /* max-width: 15rem;         */
+  margin-top: 1rem;
+}
+
+/* ///......row1......////// */
+/* .........left-side......... */
+.main-news-sec-eng-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: .5rem;
+  max-width: 15rem;
+  background-color: yellow;
+
+}
+.main-news-sec-eng-left h2{
+  width: 15rem;
+  text-align: center;
+  padding: .5rem;
+color: var(--text2-color);
+font-size: 1.5rem;
+background-color: var(--text2-color);
+color: var(--text-color);
+border-radius: 10rem;
+}
+.news-location{
+  color: var(--text2-color);
+  font-weight: 700;
+}
+.main-news-sec-eng-left p{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  color: var(--text2-color);
+}
+.main-news-sec-eng-left h3 a{
+  color: var(--text2-color);
+}
+.main-news-sec-eng-left p a img{
+  width: 100%;
+  height: 90%;
+}
+.news-time{
+  color: #058184;
+}
+.line-bt-location-region{
+  color: var(--text2-color);
+}
+/* .........hover and active sudo......... */
+/* left */
+.main-news-sec-eng-left h2:hover{
+  box-shadow: 0 0 2rem inset #058184;
+transition: .5s ease;
+}
+.main-news-sec-eng-left h2:active{
+  box-shadow: 0 0 2rem inset #058184;
+  padding: 0.4rem;
+transition: .5s ease;
+}
+.main-news-sec-eng-left h3:hover{
+  border-bottom: 1.6px solid #058184;
+transition: .3s ease;
+}
+/* right */
+.main-news-sec-eng-left h2:hover{
+  box-shadow: 0 0 2rem inset #058184;
+transition: .5s ease;
+}
+.main-news-sec-eng-left h2:active{
+  box-shadow: 0 0 2rem inset #058184;
+  padding: 0.4rem;
+transition: .5s ease;
+}
+.main-news-sec-eng-left h3:hover{
+  border-bottom: 1.6px solid #058184;
+transition: .3s ease;
+}
+/* ===== end of left=== */
+/* ===== right=== */
+.main-news-sec-eng-right h2:hover{
+  box-shadow: 0 0 2rem inset #058184;
+transition: .5s ease;
+}
+.main-news-sec-eng-right h2:active{
+  box-shadow: 0 0 2rem inset #058184;
+  padding: 0.4rem;
+transition: .5s ease;
+}
+.main-news-sec-eng-right h3:hover{
+  border-bottom: 1.6px solid #058184;
+transition: .3s ease;
+}
+/* right */
+.main-news-sec-eng-right h2:hover{
+  box-shadow: 0 0 2rem inset #058184;
+transition: .5s ease;
+}
+.main-news-sec-eng-right h2:active{
+  box-shadow: 0 0 2rem inset #058184;
+  padding: 0.4rem;
+transition: .5s ease;
+}
+.main-news-sec-eng-right h3:hover{
+  border-bottom: 1.6px solid #058184;
+transition: .3s ease;
+}
+/* ===== end of right=== */
+/* .........end of hover and active sudo......... */
+/* .........end of left-side......... */
+/* ============= row 1 right =============== */
+.main-news-sec-eng-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: .5rem;
+  max-width: 15rem;
+  background-color: yellow;
+}
+.main-news-sec-eng-right h2{
+  width: 15rem;
+  text-align: center;
+  padding: .5rem;
+color: var(--text2-color);
+font-size: 1.5rem;
+background-color: var(--text2-color);
+color: var(--text-color);
+border-radius: 10rem;
+}
+.news-location{
+  color: var(--text2-color);
+  font-weight: 700;
+}
+.main-news-sec-eng-right p{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  color: var(--text2-color);
+}
+.main-news-sec-eng-right h3 a{
+  color: var(--text2-color);
+}
+.main-news-sec-eng-right p img{
+  width: 100%;
+  height: 90%;
+}
+.news-time{
+  color: #058184;
+}
+.line-bt-location-region{
+  color: var(--text2-color);
+}
+/* ///......end of row1......////// */
+/* center or /iframe  */
+.main-news-sec-eng-center{
+  display: flex;
+  flex-wrap:wrap;
+
+  flex-shrink: 4;
+}
+
+/* ===================================== end of Main Sec of News Content ================================================ */
+
+
+/* =====================================**********************************************==================================  */
 /* ===================================== Media Qurey for navbar/header =============================================== */
-/* for 768 px */
 @media only screen and (max-width: 900px) {
 
   .header {
@@ -188,6 +392,12 @@ body {
   .left-ul li, .right-ul li {
     font-size: 14px;
   }
+  .sec-nav-link{
+    color: var(--text2-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
 }
 /* end for 768 px */
 
@@ -209,6 +419,16 @@ body {
       text-align: center;
       font-size: 6px;
        
+    }
+    .news-links-onTop-container > ul{
+      display: flex;
+      padding: 1.5rem 0;
+      gap: 0.7rem;
+    }
+    .sec-nav-link{
+      color: var(--text2-color);
+      font-size: 0.5rem;
+      font-weight: 500;
     }
   }  
 /* end of max-550px */
@@ -233,10 +453,13 @@ body {
     font-size: 6px;
      
   }
+  .sec-nav-link{
+    color: var(--text2-color);
+    font-size: 8px;
+    font-weight: 500;
+  }
 }  
 /* ========================================== End of Media Qurey for navbar/header =============================== */
-
-/* =====================================**********************************************==================================  */
 
 /* =====================================Desing By SHAHAB UDDIN GHORI==================================  */
 
