@@ -38,7 +38,7 @@ body {
 /* =====================================Root for color set  ==================================  */
 :root {
   --bg-color: #f6f6f6;
-  --second--bg-color: rgba(29, 29, 31, 0.97);
+  --second--bg-color: rgba(0, 0, 0, 0.792);
   --text-color: #ffff;
   --text2-color: #000000d8;
   --heading-color: #282828cb;
@@ -51,12 +51,15 @@ body {
 
 .header{
   /* position: fixed; */
+  position: fixed;
+  top:0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--second--bg-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.449);
+  border: 1px solid rgba(0, 0, 0, 0.663);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.547);
   backdrop-filter: blur(10px);
   width: 100%;
   gap: 1rem;
@@ -160,6 +163,8 @@ body {
 
 /* ===================================== 2ND NAV-LINK CONTAINER=============================================== */
 .news-links-onTop-container > ul{
+  position: relative;
+  top: 13rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,15 +194,16 @@ body {
 /* ===================================== END OF NAV-LINK CONTAINER=============================================== */
 /* ===================================== Main Sec of News Content ================================================ */
 .main-news-sec-eng{
+  position: relative;
+  top: 13rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;                        
   gap: 0.8rem;
   flex-wrap: wrap;
-  background-color: red;
   /* max-width: 15rem;         */
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 /* ///......row1......////// */
@@ -209,7 +215,6 @@ body {
   align-items: center;
   gap: .5rem;
   max-width: 15rem;
-  background-color: yellow;
 
 }
 .main-news-sec-eng-left h2{
@@ -314,7 +319,6 @@ transition: .3s ease;
   align-items: center;
   gap: .5rem;
   max-width: 15rem;
-  background-color: yellow;
 }
 .main-news-sec-eng-right h2{
   width: 15rem;
@@ -353,9 +357,13 @@ border-radius: 10rem;
 /* center or /iframe  */
 .main-news-sec-eng-center{
   display: flex;
-  flex-wrap:wrap;
-
+  justify-content: center;
+  align-items: center;
+}
+.iframe{
+  display: flex;
   flex-shrink: 4;
+  width: 30rem;
 }
 
 /* ===================================== end of Main Sec of News Content ================================================ */
@@ -363,6 +371,15 @@ border-radius: 10rem;
 
 /* =====================================**********************************************==================================  */
 /* ===================================== Media Qurey for navbar/header =============================================== */
+@media only screen and (max-width: 1100px) {
+  .main-news-sec-eng{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+}
 @media only screen and (max-width: 900px) {
 
   .header {
@@ -431,9 +448,9 @@ border-radius: 10rem;
       font-weight: 500;
     }
   }  
-/* end of max-550px */
+/* end of max-650px */
 
-/* for max-350px */
+/* for max-550px */
 @media only screen and (max-width: 550px) {
   .header {
     flex-direction: row;
@@ -458,7 +475,12 @@ border-radius: 10rem;
     font-size: 8px;
     font-weight: 500;
   }
+  .iframe{
+    width: 15rem;
+    height: 12rem;
+  }
 }  
+
 /* ========================================== End of Media Qurey for navbar/header =============================== */
 
 /* =====================================Desing By SHAHAB UDDIN GHORI==================================  */
